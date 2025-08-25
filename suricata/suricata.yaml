@@ -117,7 +117,7 @@ app-layer:
       enabled: true
 asn1-max-frames: 256
 capture: null
-classification-file: C:\Users\panna\Documents\GitHub\Cyberbot\suricata\configs\classification.config
+classification-file: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs\classification.config
 coredump:
   max-dump: unlimited
 datasets:
@@ -134,8 +134,8 @@ decoder:
   vxlan:
     enabled: true
     ports: $VXLAN_PORTS
-default-log-dir: C:\Users\panna\Documents\GitHub\Cyberbot\suricata\logs
-default-rule-path: C:\Users\panna\Documents\GitHub\Cyberbot\suricata\rules
+default-log-dir: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\logs
+default-rule-path: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\rules
 defrag:
   hash-size: 65536
   max-frags: 65535
@@ -453,7 +453,7 @@ profiling:
     filename: rule_perf.log
     json: true
     limit: 10
-reference-config-file: C:\Users\panna\Documents\GitHub\Cyberbot\suricata\configs\reference.config
+reference-config-file: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs\reference.config
 rule-files:
 - emerging-all.rules
 security:
@@ -503,7 +503,7 @@ threading:
         - 1-2
   detect-thread-ratio: 1.0
   set-cpu-affinity: false
-threshold-file: C:\Users\panna\Documents\GitHub\Cyberbot\suricata\configs\threshold.config
+threshold-file: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs\threshold.config
 unix-command:
   enabled: auto
 vars:

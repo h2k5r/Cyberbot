@@ -674,24 +674,10 @@ if __name__ == '__main__':
     def process_alert(self, alert_data):
         """Process and forward alerts"""
         try:
-            processed_alert = {
-                'timestamp': alert_data.get('timestamp'),
-                'event_type': alert_data.get('event_type'),
-                'severity': self.map_severity(alert_data.get('alert', {}).get('severity', 3)),
-                'signature': alert_data.get('alert', {}).get('signature', 'Unknown'),
-                'category': alert_data.get('alert', {}).get('category', 'Unknown'),
-                'source_ip': alert_data.get('src_ip'),
-                'dest_ip': alert_data.get('dest_ip'),
-                'source_port': alert_data.get('src_port'),
-                'dest_port': alert_data.get('dest_port'),
-                'protocol': alert_data.get('proto'),
-                'payload': alert_data.get('payload'),
-                'rule_file': self.get_rule_source(alert_data.get('alert', {}).get('signature_id')),
-                'raw_data': alert_data
-            }
-            
+            # Forward the raw Suricata event so downstream code can parse the expected structure
+            # (i.e., fields under the nested 'alert' object). Formatting/mapping happens in the app layer.
             if self.callback_function:
-                self.callback_function(processed_alert)
+                self.callback_function(alert_data)
                 
         except Exception as e:
             logger.error(f"Error processing alert: {e}")
