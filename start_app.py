@@ -5,6 +5,7 @@ Startup script for the Flask Security Application with Suricata Integration
 
 import logging
 import sys
+import os
 from pathlib import Path
 
 # Add project root to path
@@ -15,6 +16,17 @@ from app import app
 
 def setup_logging():
     """Setup logging configuration"""
+    # Ensure UTF-8 capable console on Windows to avoid UnicodeEncodeError for ✓/✗
+    try:
+        if os.name == 'nt':
+            os.system('chcp 65001 > NUL')
+        if hasattr(sys.stdout, 'reconfigure'):
+            sys.stdout.reconfigure(encoding='utf-8')
+        if hasattr(sys.stderr, 'reconfigure'):
+            sys.stderr.reconfigure(encoding='utf-8')
+    except Exception:
+        pass
+
     logging.basicConfig(
         level=logging.INFO,
         format='%(asctime)s - %(name)s - %(levelname)s - %(message)s'
