@@ -1,5 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react';
 import io from 'socket.io-client';
+import './LiveAlertMonitor.css';
 
 const SuricataLogMonitor = () => {
     const [alerts, setAlerts] = useState([]);

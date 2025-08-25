@@ -3,11 +3,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh; /* Changed from calc(100vh - 100px) to 100vh */
-    height: 100vh; /* Add explicit height */
+    min-height: 100vh;
+    height: 100vh;
     padding: 20px;
     background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
-    box-sizing: border-box; /* Ensure padding is included in height calculation */
+    box-sizing: border-box;
 }
 
 /* Terminal Container */
@@ -17,16 +17,15 @@
     overflow: hidden;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
     font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
-    height: 80vh; /* Use viewport height instead of fixed pixels */
-    max-height: 700px; /* Set a maximum height */
-    min-height: 500px; /* Set a minimum height */
+    height: 80vh;
+    max-height: 700px;
+    min-height: 500px;
     width: 95%;
     max-width: 1200px;
     min-width: 800px;
     border: 1px solid #404040;
 }
 
-/* Rest of your CSS remains the same... */
 .terminal-header {
     background: #2d2d2d;
     border-bottom: 1px solid #404040;

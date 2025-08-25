@@ -1902,3 +1902,117 @@
 2025-08-25 17:09:08,017 - __main__ - INFO - ============================================================
 2025-08-25 17:09:08,018 - app - INFO - Auto-starting Suricata IDS and log monitor...
 2025-08-25 17:09:08,025 - suricata_integration - INFO - Started Suricata with PID: 25736
+2025-08-25 17:15:56,597 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata
+2025-08-25 17:15:56,598 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs
+2025-08-25 17:15:56,598 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\rules
+2025-08-25 17:15:56,599 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\logs
+2025-08-25 17:15:56,599 - suricata_integration - INFO - Created config file: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs\classification.config
+2025-08-25 17:15:56,600 - suricata_integration - INFO - Created config file: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs\reference.config
+2025-08-25 17:15:56,601 - suricata_integration - INFO - Created config file: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs\threshold.config
+2025-08-25 17:15:56,697 - suricata_integration - INFO - Generated Suricata config: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\suricata.yaml
+2025-08-25 17:15:56,703 - app - INFO - Checking API configurations...
+2025-08-25 17:15:56,704 - app - INFO - All configurations present
+2025-08-25 17:15:56,704 - app - INFO - Gemini API configured successfully
+2025-08-25 17:15:56,807 - app - ERROR - Failed to initialize Jira client: maximum recursion depth exceeded
+2025-08-25 17:15:56,808 - app - INFO - Loading model from alert_classifier.pkl
+2025-08-25 17:15:56,845 - app - INFO - Model type: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-08-25 17:15:56,845 - app - INFO - Loading vectorizer from tfidf_vectorizer.pkl
+2025-08-25 17:15:56,892 - app - INFO - Vectorizer type: <class 'sklearn.feature_extraction.text.TfidfVectorizer'>
+2025-08-25 17:15:56,892 - app - INFO - Model and vectorizer loaded successfully
+2025-08-25 17:15:56,936 - __main__ - INFO - Starting Flask Security Application with Suricata Integration
+2025-08-25 17:15:57,020 - __main__ - INFO - Database connection successful
+2025-08-25 17:15:57,021 - __main__ - INFO - ============================================================
+2025-08-25 17:15:57,021 - __main__ - INFO - NETWORK INTERFACE DETECTION
+2025-08-25 17:15:57,021 - __main__ - INFO - ============================================================
+2025-08-25 17:15:57,021 - network_utils - INFO - Trying PowerShell Get-NetAdapter method...
+2025-08-25 17:15:58,218 - network_utils - INFO - Detected active interface via PowerShell: Ethernet
+2025-08-25 17:15:58,218 - network_utils - INFO - Successfully detected interface 'Ethernet' using PowerShell Get-NetAdapter
+2025-08-25 17:15:58,219 - __main__ - INFO - Primary Interface: Ethernet
+2025-08-25 17:15:59,305 - __main__ - INFO - Available Interfaces:
+2025-08-25 17:15:59,305 - __main__ - INFO -   OK Ethernet 2: Up - VirtualBox Host-Only Ethernet Adapter
+2025-08-25 17:15:59,306 - __main__ - INFO -   X Wi-Fi: Disconnected - MediaTek Wi-Fi 6E MT7922 (RZ616) 160MHz PCIe Adapter
+2025-08-25 17:15:59,306 - __main__ - INFO -   OK Ethernet: Up - Realtek Gaming GbE Family Controller
+2025-08-25 17:15:59,306 - __main__ - INFO - ============================================================
+2025-08-25 17:15:59,306 - app - INFO - Auto-starting Suricata IDS and log monitor...
+2025-08-25 17:15:59,316 - suricata_integration - INFO - Started Suricata with PID: 23868
+2025-08-25 17:39:47,742 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata
+2025-08-25 17:39:47,742 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs
+2025-08-25 17:39:47,743 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\rules
+2025-08-25 17:39:47,743 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\logs
+2025-08-25 17:39:47,744 - suricata_integration - INFO - Created config file: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs\classification.config
+2025-08-25 17:39:47,744 - suricata_integration - INFO - Created config file: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs\reference.config
+2025-08-25 17:39:47,745 - suricata_integration - INFO - Created config file: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs\threshold.config
+2025-08-25 17:39:47,823 - suricata_integration - INFO - Generated Suricata config: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\suricata.yaml
+2025-08-25 17:47:49,835 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata
+2025-08-25 17:47:49,836 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs
+2025-08-25 17:47:49,836 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\rules
+2025-08-25 17:47:49,836 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\logs
+2025-08-25 17:47:49,837 - suricata_integration - INFO - Created config file: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs\classification.config
+2025-08-25 17:47:49,838 - suricata_integration - INFO - Created config file: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs\reference.config
+2025-08-25 17:47:49,839 - suricata_integration - INFO - Created config file: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs\threshold.config
+2025-08-25 17:47:49,920 - suricata_integration - INFO - Generated Suricata config: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\suricata.yaml
+2025-08-25 17:47:49,927 - app - INFO - Checking API configurations...
+2025-08-25 17:47:49,927 - app - INFO - All configurations present
+2025-08-25 17:47:49,927 - app - INFO - Gemini API configured successfully
+2025-08-25 17:47:52,137 - app - INFO - Successfully connected to Jira. Available projects: KAN
+2025-08-25 17:47:52,137 - app - INFO - Loading model from alert_classifier.pkl
+2025-08-25 17:47:52,155 - app - INFO - Model type: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-08-25 17:47:52,155 - app - INFO - Loading vectorizer from tfidf_vectorizer.pkl
+2025-08-25 17:47:52,165 - app - INFO - Vectorizer type: <class 'sklearn.feature_extraction.text.TfidfVectorizer'>
+2025-08-25 17:47:52,165 - app - INFO - Model and vectorizer loaded successfully
+2025-08-25 17:47:52,228 - __main__ - INFO - Starting Flask Security Application with Suricata Integration
+2025-08-25 17:47:52,329 - __main__ - INFO - Database connection successful
+2025-08-25 17:47:52,329 - __main__ - INFO - ============================================================
+2025-08-25 17:47:52,330 - __main__ - INFO - NETWORK INTERFACE DETECTION
+2025-08-25 17:47:52,330 - __main__ - INFO - ============================================================
+2025-08-25 17:47:52,330 - network_utils - INFO - Trying PowerShell Get-NetAdapter method...
+2025-08-25 17:47:53,487 - network_utils - INFO - Detected active interface via PowerShell: Ethernet
+2025-08-25 17:47:53,488 - network_utils - INFO - Successfully detected interface 'Ethernet' using PowerShell Get-NetAdapter
+2025-08-25 17:47:53,488 - __main__ - INFO - Primary Interface: Ethernet
+2025-08-25 17:47:54,583 - __main__ - INFO - Available Interfaces:
+2025-08-25 17:47:54,584 - __main__ - INFO -  OK Ethernet 2: Up - VirtualBox Host-Only Ethernet Adapter
+2025-08-25 17:47:54,584 - __main__ - INFO -  X Wi-Fi: Disconnected - MediaTek Wi-Fi 6E MT7922 (RZ616) 160MHz PCIe Adapter
+2025-08-25 17:47:54,584 - __main__ - INFO -  OK Ethernet: Up - Realtek Gaming GbE Family Controller
+2025-08-25 17:47:54,584 - __main__ - INFO - ============================================================
+2025-08-25 17:47:54,585 - app - INFO - Auto-starting Suricata IDS and log monitor...
+2025-08-25 17:47:54,586 - suricata_integration - ERROR - Suricata is not available. Please install Suricata first.
+2025-08-25 17:47:54,587 - app - ERROR - Failed to start Suricata
+2025-08-25 17:47:54,587 - __main__ - INFO - Starting Flask-SocketIO app with Suricata on interface: Ethernet
+2025-08-25 17:47:54,587 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-25 17:47:58,507 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata
+2025-08-25 17:47:58,508 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs
+2025-08-25 17:47:58,508 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\rules
+2025-08-25 17:47:58,509 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\logs
+2025-08-25 17:47:58,509 - suricata_integration - INFO - Created config file: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs\classification.config
+2025-08-25 17:47:58,511 - suricata_integration - INFO - Created config file: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs\reference.config
+2025-08-25 17:47:58,512 - suricata_integration - INFO - Created config file: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs\threshold.config
+2025-08-25 17:47:58,597 - suricata_integration - INFO - Generated Suricata config: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\suricata.yaml
+2025-08-25 17:47:58,602 - app - INFO - Checking API configurations...
+2025-08-25 17:47:58,602 - app - INFO - All configurations present
+2025-08-25 17:47:58,603 - app - INFO - Gemini API configured successfully
+2025-08-25 17:48:00,769 - app - INFO - Successfully connected to Jira. Available projects: KAN
+2025-08-25 17:48:00,769 - app - INFO - Loading model from alert_classifier.pkl
+2025-08-25 17:48:00,785 - app - INFO - Model type: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-08-25 17:48:00,785 - app - INFO - Loading vectorizer from tfidf_vectorizer.pkl
+2025-08-25 17:48:00,793 - app - INFO - Vectorizer type: <class 'sklearn.feature_extraction.text.TfidfVectorizer'>
+2025-08-25 17:48:00,793 - app - INFO - Model and vectorizer loaded successfully
+2025-08-25 17:48:00,871 - __main__ - INFO - Starting Flask Security Application with Suricata Integration
+2025-08-25 17:48:00,955 - __main__ - INFO - Database connection successful
+2025-08-25 17:48:00,955 - __main__ - INFO - ============================================================
+2025-08-25 17:48:00,955 - __main__ - INFO - NETWORK INTERFACE DETECTION
+2025-08-25 17:48:00,956 - __main__ - INFO - ============================================================
+2025-08-25 17:48:00,956 - network_utils - INFO - Trying PowerShell Get-NetAdapter method...
+2025-08-25 17:48:02,156 - network_utils - INFO - Detected active interface via PowerShell: Ethernet
+2025-08-25 17:48:02,156 - network_utils - INFO - Successfully detected interface 'Ethernet' using PowerShell Get-NetAdapter
+2025-08-25 17:48:02,157 - __main__ - INFO - Primary Interface: Ethernet
+2025-08-25 17:48:03,283 - __main__ - INFO - Available Interfaces:
+2025-08-25 17:48:03,284 - __main__ - INFO -  OK Ethernet 2: Up - VirtualBox Host-Only Ethernet Adapter
+2025-08-25 17:48:03,284 - __main__ - INFO -  X Wi-Fi: Disconnected - MediaTek Wi-Fi 6E MT7922 (RZ616) 160MHz PCIe Adapter
+2025-08-25 17:48:03,284 - __main__ - INFO -  OK Ethernet: Up - Realtek Gaming GbE Family Controller
+2025-08-25 17:48:03,284 - __main__ - INFO - ============================================================
+2025-08-25 17:48:03,285 - app - INFO - Auto-starting Suricata IDS and log monitor...
+2025-08-25 17:48:03,287 - suricata_integration - ERROR - Suricata is not available. Please install Suricata first.
+2025-08-25 17:48:03,287 - app - ERROR - Failed to start Suricata
+2025-08-25 17:48:03,287 - __main__ - INFO - Starting Flask-SocketIO app with Suricata on interface: Ethernet
+2025-08-25 17:48:03,287 - werkzeug - WARNING -  * Debugger is active!
+2025-08-25 17:48:03,291 - werkzeug - INFO -  * Debugger PIN: 132-831-113

@@ -3,6 +3,10 @@
 Startup script for the Flask Security Application with Suricata Integration
 """
 
+# IMPORTANT: Monkey patch MUST be first, before any other imports
+import eventlet
+eventlet.monkey_patch()
+
 import logging
 import sys
 import os
@@ -20,10 +24,10 @@ def setup_logging():
     try:
         if os.name == 'nt':
             os.system('chcp 65001 > NUL')
-        if hasattr(sys.stdout, 'reconfigure'):
-            sys.stdout.reconfigure(encoding='utf-8')
-        if hasattr(sys.stderr, 'reconfigure'):
-            sys.stderr.reconfigure(encoding='utf-8')
+            if hasattr(sys.stdout, 'reconfigure'):
+                sys.stdout.reconfigure(encoding='utf-8')
+            if hasattr(sys.stderr, 'reconfigure'):
+                sys.stderr.reconfigure(encoding='utf-8')
     except Exception:
         pass
 
@@ -35,21 +39,20 @@ def setup_logging():
 def display_network_info():
     """Display network interface information at startup"""
     logger = logging.getLogger(__name__)
-    
     logger.info("=" * 60)
     logger.info("NETWORK INTERFACE DETECTION")
     logger.info("=" * 60)
-    
+
     # Detect primary interface
     primary = detect_primary_network_interface()
     logger.info(f"Primary Interface: {primary}")
-    
+
     # Show all interfaces
     interfaces = get_all_network_interfaces()
     logger.info("Available Interfaces:")
     for interface in interfaces:
         status_icon = "OK" if interface['status'] == 'Up' else "X"
-        logger.info(f"  {status_icon} {interface['name']}: {interface['status']} - {interface['description']}")
+        logger.info(f" {status_icon} {interface['name']}: {interface['status']} - {interface['description']}")
     
     logger.info("=" * 60)
     return primary
@@ -57,12 +60,11 @@ def display_network_info():
 def test_database_connection():
     """Test database connectivity on startup"""
     logger = logging.getLogger(__name__)
-    
     try:
         from app import db
         with app.app_context():
             db.session.execute('SELECT 1')
-            logger.info("Database connection successful")
+        logger.info("Database connection successful")
     except Exception as e:
         logger.error(f"Database connection failed: {str(e)}")
         sys.exit(1)

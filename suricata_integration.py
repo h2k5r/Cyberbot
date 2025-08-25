@@ -376,45 +376,71 @@ class SuricataManager:
         self.config_file = self.config_manager.generate_suricata_yaml(self.interface)
         self.eve_json_path = self.config_manager.logs_dir / 'eve.json'
         
-    def start_suricata(self, callback_function):
-        """Start Suricata with file watcher monitoring"""
+    def start_suricata(self, alert_callback=None):
+        """Start Suricata IDS"""
         try:
-            self.callback_function = callback_function
+            if self.suricata_process and self.suricata_process.poll() is None:
+                logger.warning("Suricata is already running")
+                return True
+
+            # Check if Suricata is available
+            if not self.check_suricata_availability():
+                logger.error("Suricata is not available. Please install Suricata first.")
+                return False
+
+            config_file = self.config_manager.config_dir / 'suricata.yaml'
+            
+            # Create config if it doesn't exist
+            if not config_file.exists():
+                self.config_manager.create_suricata_config(self.interface)
+
+            # Suricata command for Windows
+            cmd = [
+                'suricata',
+                '-c', str(config_file),
+                '-i', self.interface,
+                '-l', str(self.config_manager.logs_dir),
+                '-v'  # Verbose output
+            ]
+
+            logger.info(f"Starting Suricata with command: {' '.join(cmd)}")
             
             # Start Suricata process
-            suricata_cmd = [
-                'suricata',
-                '-c', str(self.config_file),
-                '-i', self.interface,
-                '--init-errors-fatal'
-            ]
+            self.suricata_process = subprocess.Popen(
+                cmd,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.PIPE,
+                text=True,
+                bufsize=1,
+                universal_newlines=True
+            )
             
-            if platform.system() == 'Windows':
-                cmd_str = ' '.join(suricata_cmd)
-                self.suricata_process = subprocess.Popen(
-                    ['cmd', '/c', 'start', 'Suricata IDS', 'cmd', '/k', cmd_str],
-                    creationflags=subprocess.CREATE_NEW_CONSOLE
-                )
-                logger.info(f"Started Suricata with PID: {self.suricata_process.pid}")
-                
-                # Start file watcher monitor instead of separate window
-                self.start_log_monitoring_with_watcher()
-                return True
-                
-            else:
-                # Linux implementation
-                if os.environ.get('DISPLAY'):
-                    self.suricata_process = subprocess.Popen(
-                        ['gnome-terminal', '--', 'bash', '-c', 
-                         f"{' '.join(suricata_cmd)}; echo 'Press Enter to close...'; read"]
-                    )
-                else:
-                    self.suricata_process = subprocess.Popen(suricata_cmd)
-                return True
-                
-        except Exception as e:
-            logger.error(f"Failed to start Suricata: {e}")
+            # Start log monitoring
+            if alert_callback:
+                self.start_log_monitoring(alert_callback)
+            
+            logger.info(f"Suricata started successfully with PID: {self.suricata_process.pid}")
+            return True
+            
+        except FileNotFoundError:
+            logger.error("Suricata executable not found. Please install Suricata and add it to PATH.")
             return False
+        except Exception as e:
+            logger.error(f"Failed to start Suricata: {str(e)}")
+            return False
+
+    def check_suricata_availability(self):
+        """Check if Suricata is available in the system"""
+        try:
+            result = subprocess.run(['suricata', '--version'], 
+                                capture_output=True, text=True, timeout=5)
+            if result.returncode == 0:
+                logger.info(f"Suricata version: {result.stdout.strip()}")
+                return True
+            return False
+        except (subprocess.TimeoutExpired, FileNotFoundError):
+            return False
+
     
     def create_monitor_script(self, monitor_script):
         """Create the enhanced monitor script with clean output"""
