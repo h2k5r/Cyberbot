@@ -1008,12 +1008,12 @@
 2025-08-25 14:36:26,511 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 14:36:26] "POST /socket.io/?EIO=4&transport=polling&t=w7lzxffg&sid=B-P3SgOMjUISjBrNAAAR HTTP/1.1" 200 -
 2025-08-25 14:36:26,511 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 14:36:26] "GET /socket.io/?EIO=4&transport=polling&t=w7lzyq53&sid=B-P3SgOMjUISjBrNAAAR HTTP/1.1" 200 -
 2025-08-25 14:36:26,520 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 14:36:26] "[35m[1mGET /socket.io/?EIO=4&transport=websocket&sid=B-P3SgOMjUISjBrNAAAR HTTP/1.1[0m" 500 -
-2025-08-25 14:37:00,857 - werkzeug - ERROR - 192.168.31.93 - - [25/Aug/2025 14:37:00] code 400, message Bad request version (":OßGïC_Z¾Ó+8T1·\x06giU\x00¶\x13\x02\x13\x03\x13\x01À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ\xadÀ\x9fÀ]ÀaÀWÀS\x00§À+À/\x00¢\x00\x9eÀ¬À\x9eÀ\\À`ÀVÀR\x00¦À¯À®À£À¢À$À(\x00k\x00jÀsÀw\x00Ä\x00Ã\x00m\x00ÅÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½\x00l\x00¿À")
+2025-08-25 14:37:00,857 - werkzeug - ERROR - 192.168.31.93 - - [25/Aug/2025 14:37:00] code 400, message Bad request version (":Oï¿½Gï¿½C_Zï¿½ï¿½+8T1ï¿½\x06giU\x00ï¿½\x13\x02\x13\x03\x13\x01ï¿½,ï¿½0\x00ï¿½\x00\x9fÌ©Ì¨Ìªï¿½\xadï¿½\x9fï¿½]ï¿½aï¿½Wï¿½S\x00ï¿½ï¿½+ï¿½/\x00ï¿½\x00\x9eï¿½ï¿½ï¿½\x9eï¿½\\ï¿½`ï¿½Vï¿½R\x00ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½$ï¿½(\x00k\x00jï¿½sï¿½w\x00ï¿½\x00ï¿½\x00m\x00ï¿½ï¿½#ï¿½'\x00g\x00@ï¿½rï¿½v\x00ï¿½\x00ï¿½\x00l\x00ï¿½ï¿½")
 2025-08-25 14:37:00,892 - werkzeug - INFO -  * Detected change in 'C:\\Python313\\Lib\\http\\server.py', reloading
 2025-08-25 14:37:00,923 - werkzeug - INFO -  * Detected change in 'C:\\Users\\panna\\Documents\\GitHub\\Cyberbot\\venv\\Lib\\site-packages\\werkzeug\\serving.py', reloading
 2025-08-25 14:37:00,923 - werkzeug - INFO -  * Detected change in 'C:\\Python313\\Lib\\socketserver.py', reloading
-2025-08-25 14:37:00,926 - werkzeug - ERROR - 192.168.31.93 - - [25/Aug/2025 14:37:00] code 400, message Bad request version ('´¤<õ©â`\x8d2Þ¨s')
-2025-08-25 14:37:00,930 - werkzeug - ERROR - 192.168.31.93 - - [25/Aug/2025 14:37:00] code 400, message Bad request version ("¥@\x1a,}\x00¶\x13\x02\x13\x03\x13\x01À,À0\x00£\x00\x9fÌ©Ì¨ÌªÀ\xadÀ\x9fÀ]ÀaÀWÀS\x00§À+À/\x00¢\x00\x9eÀ¬À\x9eÀ\\À`ÀVÀR\x00¦À¯À®À£À¢À$À(\x00k\x00jÀsÀw\x00Ä\x00Ã\x00m\x00ÅÀ#À'\x00g\x00@ÀrÀv\x00¾\x00½\x00l\x00¿À")
+2025-08-25 14:37:00,926 - werkzeug - ERROR - 192.168.31.93 - - [25/Aug/2025 14:37:00] code 400, message Bad request version ('ï¿½ï¿½<ï¿½ï¿½ï¿½`\x8d2Þ¨s')
+2025-08-25 14:37:00,930 - werkzeug - ERROR - 192.168.31.93 - - [25/Aug/2025 14:37:00] code 400, message Bad request version ("ï¿½@\x1a,}\x00ï¿½\x13\x02\x13\x03\x13\x01ï¿½,ï¿½0\x00ï¿½\x00\x9fÌ©Ì¨Ìªï¿½\xadï¿½\x9fï¿½]ï¿½aï¿½Wï¿½S\x00ï¿½ï¿½+ï¿½/\x00ï¿½\x00\x9eï¿½ï¿½ï¿½\x9eï¿½\\ï¿½`ï¿½Vï¿½R\x00ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½$ï¿½(\x00k\x00jï¿½sï¿½w\x00ï¿½\x00ï¿½\x00m\x00ï¿½ï¿½#ï¿½'\x00g\x00@ï¿½rï¿½v\x00ï¿½\x00ï¿½\x00l\x00ï¿½ï¿½")
 2025-08-25 14:37:01,784 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
 2025-08-25 14:37:06,449 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\GitHub\Cyberbot\suricata
 2025-08-25 14:37:06,449 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\GitHub\Cyberbot\suricata\configs
@@ -1545,3 +1545,139 @@
 2025-08-25 16:50:59,383 - __main__ - INFO - NETWORK INTERFACE DETECTION
 2025-08-25 16:50:59,383 - __main__ - INFO - ============================================================
 2025-08-25 16:50:59,383 - network_utils - INFO - Trying PowerShell Get-NetAdapter method...
+2025-08-25 16:52:46,200 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata
+2025-08-25 16:52:46,201 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs
+2025-08-25 16:52:46,202 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\rules
+2025-08-25 16:52:46,202 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\logs
+2025-08-25 16:52:46,203 - suricata_integration - INFO - Created config file: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs\classification.config
+2025-08-25 16:52:46,204 - suricata_integration - INFO - Created config file: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs\reference.config
+2025-08-25 16:52:46,205 - suricata_integration - INFO - Created config file: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs\threshold.config
+2025-08-25 16:52:46,299 - suricata_integration - INFO - Generated Suricata config: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\suricata.yaml
+2025-08-25 16:52:46,307 - app - INFO - Checking API configurations...
+2025-08-25 16:52:46,308 - app - INFO - All configurations present
+2025-08-25 16:52:46,308 - app - INFO - Gemini API configured successfully
+2025-08-25 16:52:47,923 - app - INFO - Successfully connected to Jira. Available projects: KAN
+2025-08-25 16:52:47,924 - app - INFO - Loading model from alert_classifier.pkl
+2025-08-25 16:52:47,946 - app - INFO - Model type: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-08-25 16:52:47,946 - app - INFO - Loading vectorizer from tfidf_vectorizer.pkl
+2025-08-25 16:52:47,959 - app - INFO - Vectorizer type: <class 'sklearn.feature_extraction.text.TfidfVectorizer'>
+2025-08-25 16:52:47,959 - app - INFO - Model and vectorizer loaded successfully
+2025-08-25 16:52:47,985 - __main__ - INFO - Starting Flask Security Application with Suricata Integration
+2025-08-25 16:52:48,117 - __main__ - INFO - Database connection successful
+2025-08-25 16:52:48,117 - __main__ - INFO - ============================================================
+2025-08-25 16:52:48,118 - __main__ - INFO - NETWORK INTERFACE DETECTION
+2025-08-25 16:52:48,118 - __main__ - INFO - ============================================================
+2025-08-25 16:52:48,118 - network_utils - INFO - Trying PowerShell Get-NetAdapter method...
+2025-08-25 16:52:49,685 - network_utils - INFO - Detected active interface via PowerShell: Ethernet
+2025-08-25 16:52:49,685 - network_utils - INFO - Successfully detected interface 'Ethernet' using PowerShell Get-NetAdapter
+2025-08-25 16:52:49,686 - __main__ - INFO - Primary Interface: Ethernet
+2025-08-25 16:52:51,115 - __main__ - INFO - Available Interfaces:
+2025-08-25 16:52:51,128 - __main__ - INFO - ============================================================
+2025-08-25 16:52:51,129 - __main__ - INFO - Starting Flask app with Suricata on interface: Ethernet
+2025-08-25 16:52:51,135 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-25 16:52:56,285 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata
+2025-08-25 16:52:56,286 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs
+2025-08-25 16:52:56,287 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\rules
+2025-08-25 16:52:56,288 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\logs
+2025-08-25 16:52:56,288 - suricata_integration - INFO - Created config file: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs\classification.config
+2025-08-25 16:52:56,289 - suricata_integration - INFO - Created config file: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs\reference.config
+2025-08-25 16:52:56,290 - suricata_integration - INFO - Created config file: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs\threshold.config
+2025-08-25 16:52:56,392 - suricata_integration - INFO - Generated Suricata config: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\suricata.yaml
+2025-08-25 16:52:56,400 - app - INFO - Checking API configurations...
+2025-08-25 16:52:56,400 - app - INFO - All configurations present
+2025-08-25 16:52:56,400 - app - INFO - Gemini API configured successfully
+2025-08-25 16:52:58,019 - app - INFO - Successfully connected to Jira. Available projects: KAN
+2025-08-25 16:52:58,020 - app - INFO - Loading model from alert_classifier.pkl
+2025-08-25 16:52:58,048 - app - INFO - Model type: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-08-25 16:52:58,048 - app - INFO - Loading vectorizer from tfidf_vectorizer.pkl
+2025-08-25 16:52:58,062 - app - INFO - Vectorizer type: <class 'sklearn.feature_extraction.text.TfidfVectorizer'>
+2025-08-25 16:52:58,062 - app - INFO - Model and vectorizer loaded successfully
+2025-08-25 16:52:58,086 - __main__ - INFO - Starting Flask Security Application with Suricata Integration
+2025-08-25 16:52:58,212 - __main__ - INFO - Database connection successful
+2025-08-25 16:52:58,213 - __main__ - INFO - ============================================================
+2025-08-25 16:52:58,213 - __main__ - INFO - NETWORK INTERFACE DETECTION
+2025-08-25 16:52:58,213 - __main__ - INFO - ============================================================
+2025-08-25 16:52:58,214 - network_utils - INFO - Trying PowerShell Get-NetAdapter method...
+2025-08-25 16:52:59,762 - network_utils - INFO - Detected active interface via PowerShell: Ethernet
+2025-08-25 16:52:59,763 - network_utils - INFO - Successfully detected interface 'Ethernet' using PowerShell Get-NetAdapter
+2025-08-25 16:52:59,765 - __main__ - INFO - Primary Interface: Ethernet
+2025-08-25 16:53:01,188 - __main__ - INFO - Available Interfaces:
+2025-08-25 16:53:01,197 - __main__ - INFO - ============================================================
+2025-08-25 16:53:01,197 - __main__ - INFO - Starting Flask app with Suricata on interface: Ethernet
+2025-08-25 16:53:01,201 - werkzeug - WARNING -  * Debugger is active!
+2025-08-25 16:53:01,208 - werkzeug - INFO -  * Debugger PIN: 254-886-628
+2025-08-25 16:53:01,306 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-08-25 16:53:01,306 - werkzeug - INFO -  * Running on http://192.168.31.4:5000/ (Press CTRL+C to quit)
+2025-08-25 16:53:02,526 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:53:02] "GET /socket.io/?EIO=4&transport=polling&t=13a2k0iy HTTP/1.1" 200 -
+2025-08-25 16:53:02,765 - app - INFO - Client connected to alert stream
+2025-08-25 16:53:02,766 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:53:02] "POST /socket.io/?EIO=4&transport=polling&t=13ablg05&sid=2MWa_OyVFR9nRBdPAAAA HTTP/1.1" 200 -
+2025-08-25 16:53:02,845 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:53:02] "GET /socket.io/?EIO=4&transport=polling&t=13abmlg0&sid=2MWa_OyVFR9nRBdPAAAA HTTP/1.1" 200 -
+2025-08-25 16:53:02,861 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:53:02] "[35m[1mGET /socket.io/?EIO=4&transport=websocket&sid=2MWa_OyVFR9nRBdPAAAA HTTP/1.1[0m" 500 -
+2025-08-25 16:53:23,106 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:53:23] "GET /api/suricata/logs HTTP/1.1" 200 -
+2025-08-25 16:53:29,376 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:53:29] "GET /api/suricata/logs HTTP/1.1" 200 -
+2025-08-25 16:53:47,852 - app - INFO - Client disconnected from alert stream
+2025-08-25 16:53:47,853 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:53:47] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=13akg2tu&sid=2MWa_OyVFR9nRBdPAAAA HTTP/1.1[0m" 400 -
+2025-08-25 16:53:48,165 - engineio.server - ERROR - Invalid session 2MWa_OyVFR9nRBdPAAAA (further occurrences of this error will be logged with level INFO)
+2025-08-25 16:53:48,167 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:53:48] "[31m[1mPOST /socket.io/?EIO=4&transport=polling&t=149ap1tg&sid=2MWa_OyVFR9nRBdPAAAA HTTP/1.1[0m" 400 -
+2025-08-25 16:53:49,215 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:53:49] "GET /socket.io/?EIO=4&transport=polling&t=14accv3h HTTP/1.1" 200 -
+2025-08-25 16:53:49,524 - app - INFO - Client connected to alert stream
+2025-08-25 16:53:49,526 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:53:49] "POST /socket.io/?EIO=4&transport=polling&t=14achvm7&sid=ujr84r17XmnYA_r7AAAC HTTP/1.1" 200 -
+2025-08-25 16:53:49,528 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:53:49] "GET /socket.io/?EIO=4&transport=polling&t=14acih3d&sid=ujr84r17XmnYA_r7AAAC HTTP/1.1" 200 -
+2025-08-25 16:53:49,539 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:53:49] "[35m[1mGET /socket.io/?EIO=4&transport=websocket&sid=ujr84r17XmnYA_r7AAAC HTTP/1.1[0m" 500 -
+2025-08-25 16:54:08,974 - app - INFO - Client disconnected from alert stream
+2025-08-25 16:54:08,975 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:54:08] "POST /socket.io/?EIO=4&transport=polling&t=14pl7y1c&sid=ujr84r17XmnYA_r7AAAC HTTP/1.1" 200 -
+2025-08-25 16:54:09,304 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:54:09] "POST /socket.io/?EIO=4&transport=polling&t=14plt7d8&sid=ujr84r17XmnYA_r7AAAC HTTP/1.1" 200 -
+2025-08-25 16:54:14,936 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:54:14] "GET /socket.io/?EIO=4&transport=polling&t=14ty6uj4 HTTP/1.1" 200 -
+2025-08-25 16:54:14,942 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:54:14] "GET /api/suricata/logs HTTP/1.1" 200 -
+2025-08-25 16:54:14,943 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:54:14] "GET /socket.io/?EIO=4&transport=polling&t=14tyaw4e HTTP/1.1" 200 -
+2025-08-25 16:54:15,257 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:54:15] "GET /api/suricata/logs HTTP/1.1" 200 -
+2025-08-25 16:54:15,261 - app - INFO - Client connected to alert stream
+2025-08-25 16:54:15,263 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:54:15] "POST /socket.io/?EIO=4&transport=polling&t=14u7cpv2&sid=hCYHgIMhTPyqNZXPAAAF HTTP/1.1" 200 -
+2025-08-25 16:54:15,273 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:54:15] "[35m[1mGET /socket.io/?EIO=4&transport=websocket&sid=hCYHgIMhTPyqNZXPAAAF HTTP/1.1[0m" 500 -
+2025-08-25 16:54:34,788 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:54:34] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=14al73l7&sid=ujr84r17XmnYA_r7AAAC HTTP/1.1[0m" 400 -
+2025-08-25 16:54:43,748 - werkzeug - INFO -  * Detected change in 'C:\\Users\\panna\\Documents\\Github\\Cyberbot\\Cyberbot\\config\\app_config.py', reloading
+2025-08-25 16:54:45,655 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-25 16:54:51,211 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata
+2025-08-25 16:54:51,212 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs
+2025-08-25 16:54:51,213 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\rules
+2025-08-25 16:54:51,213 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\logs
+2025-08-25 16:54:51,215 - suricata_integration - INFO - Created config file: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs\classification.config
+2025-08-25 16:54:51,216 - suricata_integration - INFO - Created config file: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs\reference.config
+2025-08-25 16:54:51,217 - suricata_integration - INFO - Created config file: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs\threshold.config
+2025-08-25 16:54:51,317 - suricata_integration - INFO - Generated Suricata config: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\suricata.yaml
+2025-08-25 16:54:51,325 - app - INFO - Checking API configurations...
+2025-08-25 16:54:51,326 - app - INFO - All configurations present
+2025-08-25 16:54:51,326 - app - INFO - Gemini API configured successfully
+2025-08-25 16:54:53,091 - app - INFO - Successfully connected to Jira. Available projects: KAN
+2025-08-25 16:54:53,092 - app - INFO - Loading model from alert_classifier.pkl
+2025-08-25 16:54:53,122 - app - INFO - Model type: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-08-25 16:54:53,123 - app - INFO - Loading vectorizer from tfidf_vectorizer.pkl
+2025-08-25 16:54:53,137 - app - INFO - Vectorizer type: <class 'sklearn.feature_extraction.text.TfidfVectorizer'>
+2025-08-25 16:54:53,137 - app - INFO - Model and vectorizer loaded successfully
+2025-08-25 16:54:53,164 - __main__ - INFO - Starting Flask Security Application with Suricata Integration
+2025-08-25 16:54:53,318 - __main__ - INFO - Database connection successful
+2025-08-25 16:54:53,319 - __main__ - INFO - ============================================================
+2025-08-25 16:54:53,320 - __main__ - INFO - NETWORK INTERFACE DETECTION
+2025-08-25 16:54:53,320 - __main__ - INFO - ============================================================
+2025-08-25 16:54:53,320 - network_utils - INFO - Trying PowerShell Get-NetAdapter method...
+2025-08-25 16:54:55,015 - network_utils - INFO - Detected active interface via PowerShell: Ethernet
+2025-08-25 16:54:55,015 - network_utils - INFO - Successfully detected interface 'Ethernet' using PowerShell Get-NetAdapter
+2025-08-25 16:54:55,016 - __main__ - INFO - Primary Interface: Ethernet
+2025-08-25 16:54:56,523 - __main__ - INFO - Available Interfaces:
+2025-08-25 16:54:56,533 - __main__ - INFO - ============================================================
+2025-08-25 16:54:56,533 - __main__ - INFO - Starting Flask app with Suricata on interface: Ethernet
+2025-08-25 16:54:56,536 - werkzeug - WARNING -  * Debugger is active!
+2025-08-25 16:54:56,540 - werkzeug - INFO -  * Debugger PIN: 254-886-628
+2025-08-25 16:54:56,654 - werkzeug - WARNING -  * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+2025-08-25 16:54:56,655 - werkzeug - INFO -  * Running on http://192.168.31.4:5000/ (Press CTRL+C to quit)
+2025-08-25 16:54:56,902 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:54:56] "GET /socket.io/?EIO=4&transport=polling&t=15pqy6nf HTTP/1.1" 200 -
+2025-08-25 16:54:57,157 - app - INFO - Client connected to alert stream
+2025-08-25 16:54:57,157 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:54:57] "POST /socket.io/?EIO=4&transport=polling&t=15qkqd3j&sid=8GPEOyPzkpwqoGe0AAAA HTTP/1.1" 200 -
+2025-08-25 16:54:57,218 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:54:57] "GET /socket.io/?EIO=4&transport=polling&t=15qkq9cf&sid=8GPEOyPzkpwqoGe0AAAA HTTP/1.1" 200 -
+2025-08-25 16:54:57,231 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:54:57] "[35m[1mGET /socket.io/?EIO=4&transport=websocket&sid=8GPEOyPzkpwqoGe0AAAA HTTP/1.1[0m" 500 -
+2025-08-25 16:55:42,224 - app - INFO - Client disconnected from alert stream
+2025-08-25 16:55:42,518 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:55:42] "POST /socket.io/?EIO=4&transport=polling&t=16pj7812&sid=8GPEOyPzkpwqoGe0AAAA HTTP/1.1" 200 -
+2025-08-25 16:55:42,686 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:55:42] "[31m[1mGET /socket.io/?EIO=4&transport=polling&t=15qth1bt&sid=8GPEOyPzkpwqoGe0AAAA HTTP/1.1[0m" 400 -
+2025-08-25 16:55:44,513 - werkzeug - INFO - 127.0.0.1 - - [25/Aug/2025 16:55:44] "GET /socket.io/?EIO=4&transport=polling&t=16r2hukh HTTP/1.1" 200 -

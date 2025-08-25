@@ -27,6 +27,7 @@ import os
 from network_utils import detect_primary_network_interface, get_all_network_interfaces
 from flask_socketio import SocketIO, emit
 import eventlet
+eventlet.monkey_patch()
 
 
 app = Flask(__name__)
@@ -40,8 +41,8 @@ CORS(app, resources={
     }
 })  # More explicit CORS configuration
 
-# Initialize SocketIO
-socketio = SocketIO(app, cors_allowed_origins="*")
+# Initialize SocketIO with eventlet async mode
+socketio = SocketIO(app, cors_allowed_origins="*", async_mode='eventlet')
 
 # Add WebSocket route for live alerts
 @socketio.on('connect')
