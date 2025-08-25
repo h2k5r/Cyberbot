@@ -12,7 +12,7 @@ from pathlib import Path
 sys.path.append(str(Path(__file__).parent))
 
 from network_utils import detect_primary_network_interface, get_all_network_interfaces
-from app import app
+from app import app, socketio, auto_start_suricata
 
 def setup_logging():
     """Setup logging configuration"""
@@ -48,7 +48,7 @@ def display_network_info():
     interfaces = get_all_network_interfaces()
     logger.info("Available Interfaces:")
     for interface in interfaces:
-        status_icon = "✓" if interface['status'] == 'Up' else "✗"
+        status_icon = "OK" if interface['status'] == 'Up' else "X"
         logger.info(f"  {status_icon} {interface['name']}: {interface['status']} - {interface['description']}")
     
     logger.info("=" * 60)
@@ -80,10 +80,16 @@ def main():
     # Display network information
     primary_interface = display_network_info()
     
-    # Start the Flask application
-    logger.info(f"Starting Flask app with Suricata on interface: {primary_interface}")
+    # Ensure Suricata starts when launching via this script
+    try:
+        auto_start_suricata()
+    except Exception:
+        pass
     
-    app.run(
+    # Start the application using SocketIO to support websockets
+    logger.info(f"Starting Flask-SocketIO app with Suricata on interface: {primary_interface}")
+    socketio.run(
+        app,
         host='0.0.0.0',
         port=5000,
         debug=app.config.get('DEBUG', False)

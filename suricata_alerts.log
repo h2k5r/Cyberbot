@@ -1742,3 +1742,64 @@
 2025-08-25 16:57:09,679 - __main__ - INFO - Starting Flask app with Suricata on interface: Ethernet
 2025-08-25 16:57:09,682 - werkzeug - WARNING -  * Debugger is active!
 2025-08-25 16:57:09,690 - werkzeug - INFO -  * Debugger PIN: 254-886-628
+2025-08-25 16:59:21,374 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata
+2025-08-25 16:59:21,375 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs
+2025-08-25 16:59:21,376 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\rules
+2025-08-25 16:59:21,376 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\logs
+2025-08-25 16:59:21,377 - suricata_integration - INFO - Created config file: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs\classification.config
+2025-08-25 16:59:21,379 - suricata_integration - INFO - Created config file: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs\reference.config
+2025-08-25 16:59:21,379 - suricata_integration - INFO - Created config file: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs\threshold.config
+2025-08-25 16:59:21,482 - suricata_integration - INFO - Generated Suricata config: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\suricata.yaml
+2025-08-25 16:59:21,491 - app - INFO - Checking API configurations...
+2025-08-25 16:59:21,491 - app - INFO - All configurations present
+2025-08-25 16:59:21,492 - app - INFO - Gemini API configured successfully
+2025-08-25 16:59:21,603 - app - ERROR - Failed to initialize Jira client: maximum recursion depth exceeded
+2025-08-25 16:59:21,604 - app - INFO - Loading model from alert_classifier.pkl
+2025-08-25 16:59:21,630 - app - INFO - Model type: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-08-25 16:59:21,630 - app - INFO - Loading vectorizer from tfidf_vectorizer.pkl
+2025-08-25 16:59:21,642 - app - INFO - Vectorizer type: <class 'sklearn.feature_extraction.text.TfidfVectorizer'>
+2025-08-25 16:59:21,642 - app - INFO - Model and vectorizer loaded successfully
+2025-08-25 16:59:21,709 - __main__ - INFO - Starting Flask Security Application with Suricata Integration
+2025-08-25 16:59:21,824 - __main__ - INFO - Database connection successful
+2025-08-25 16:59:21,825 - __main__ - INFO - ============================================================
+2025-08-25 16:59:21,826 - __main__ - INFO - NETWORK INTERFACE DETECTION
+2025-08-25 16:59:21,826 - __main__ - INFO - ============================================================
+2025-08-25 16:59:21,826 - network_utils - INFO - Trying PowerShell Get-NetAdapter method...
+2025-08-25 16:59:23,402 - network_utils - INFO - Detected active interface via PowerShell: Ethernet
+2025-08-25 16:59:23,403 - network_utils - INFO - Successfully detected interface 'Ethernet' using PowerShell Get-NetAdapter
+2025-08-25 16:59:23,405 - __main__ - INFO - Primary Interface: Ethernet
+2025-08-25 16:59:24,836 - __main__ - INFO - Available Interfaces:
+2025-08-25 16:59:24,846 - __main__ - INFO - ============================================================
+2025-08-25 16:59:24,846 - __main__ - INFO - Starting Flask app with Suricata on interface: Ethernet
+2025-08-25 16:59:24,852 - werkzeug - INFO -  * Restarting with watchdog (windowsapi)
+2025-08-25 16:59:30,816 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata
+2025-08-25 16:59:30,817 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs
+2025-08-25 16:59:30,818 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\rules
+2025-08-25 16:59:30,818 - suricata_integration - INFO - Created directory: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\logs
+2025-08-25 16:59:30,820 - suricata_integration - INFO - Created config file: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs\classification.config
+2025-08-25 16:59:30,821 - suricata_integration - INFO - Created config file: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs\reference.config
+2025-08-25 16:59:30,822 - suricata_integration - INFO - Created config file: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\configs\threshold.config
+2025-08-25 16:59:30,922 - suricata_integration - INFO - Generated Suricata config: C:\Users\panna\Documents\Github\Cyberbot\Cyberbot\suricata\suricata.yaml
+2025-08-25 16:59:30,931 - app - INFO - Checking API configurations...
+2025-08-25 16:59:30,932 - app - INFO - All configurations present
+2025-08-25 16:59:30,932 - app - INFO - Gemini API configured successfully
+2025-08-25 16:59:30,979 - app - ERROR - Failed to initialize Jira client: maximum recursion depth exceeded
+2025-08-25 16:59:30,981 - app - INFO - Loading model from alert_classifier.pkl
+2025-08-25 16:59:31,007 - app - INFO - Model type: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-08-25 16:59:31,008 - app - INFO - Loading vectorizer from tfidf_vectorizer.pkl
+2025-08-25 16:59:31,019 - app - INFO - Vectorizer type: <class 'sklearn.feature_extraction.text.TfidfVectorizer'>
+2025-08-25 16:59:31,019 - app - INFO - Model and vectorizer loaded successfully
+2025-08-25 16:59:31,079 - __main__ - INFO - Starting Flask Security Application with Suricata Integration
+2025-08-25 16:59:31,197 - __main__ - INFO - Database connection successful
+2025-08-25 16:59:31,198 - __main__ - INFO - ============================================================
+2025-08-25 16:59:31,199 - __main__ - INFO - NETWORK INTERFACE DETECTION
+2025-08-25 16:59:31,199 - __main__ - INFO - ============================================================
+2025-08-25 16:59:31,199 - network_utils - INFO - Trying PowerShell Get-NetAdapter method...
+2025-08-25 16:59:32,738 - network_utils - INFO - Detected active interface via PowerShell: Ethernet
+2025-08-25 16:59:32,739 - network_utils - INFO - Successfully detected interface 'Ethernet' using PowerShell Get-NetAdapter
+2025-08-25 16:59:32,740 - __main__ - INFO - Primary Interface: Ethernet
+2025-08-25 16:59:34,236 - __main__ - INFO - Available Interfaces:
+2025-08-25 16:59:34,248 - __main__ - INFO - ============================================================
+2025-08-25 16:59:34,249 - __main__ - INFO - Starting Flask app with Suricata on interface: Ethernet
+2025-08-25 16:59:34,251 - werkzeug - WARNING -  * Debugger is active!
+2025-08-25 16:59:34,256 - werkzeug - INFO -  * Debugger PIN: 254-886-628
