@@ -1,0 +1,324 @@
+/* Terminal Wrapper for centering */
+.terminal-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Changed from calc(100vh - 100px) to 100vh */
+    height: 100vh; /* Add explicit height */
+    padding: 20px;
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    box-sizing: border-box; /* Ensure padding is included in height calculation */
+}
+
+/* Terminal Container */
+.terminal-container {
+    background: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+    font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+    height: 80vh; /* Use viewport height instead of fixed pixels */
+    max-height: 700px; /* Set a maximum height */
+    min-height: 500px; /* Set a minimum height */
+    width: 95%;
+    max-width: 1200px;
+    min-width: 800px;
+    border: 1px solid #404040;
+}
+
+/* Rest of your CSS remains the same... */
+.terminal-header {
+    background: #2d2d2d;
+    border-bottom: 1px solid #404040;
+}
+
+.terminal-title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 16px;
+    background: linear-gradient(135deg, #2d2d2d 0%, #3d3d3d 100%);
+}
+
+.terminal-controls {
+    display: flex;
+    gap: 8px;
+}
+
+.terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.terminal-button:hover {
+    transform: scale(1.1);
+}
+
+.terminal-button.close {
+    background: #ff5f57;
+}
+
+.terminal-button.minimize {
+    background: #ffbd2e;
+}
+
+.terminal-button.maximize {
+    background: #28ca42;
+}
+
+.terminal-title-text {
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 14px;
+    flex: 1;
+    text-align: center;
+}
+
+.terminal-status {
+    display: flex;
+    align-items: center;
+}
+
+.connection-indicator {
+    font-size: 12px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.connection-indicator.connected {
+    color: #28ca42;
+}
+
+.connection-indicator.disconnected {
+    color: #ff5f57;
+}
+
+.terminal-controls-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background: #2a2a2a;
+    border-bottom: 1px solid #404040;
+}
+
+.stats-bar {
+    display: flex;
+    gap: 12px;
+    font-size: 11px;
+}
+
+.stat-item {
+    color: #ffffff;
+    background: #404040;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    min-width: 60px;
+    text-align: center;
+}
+
+.stat-item.critical {
+    background: #ff4444;
+    color: #ffffff;
+}
+
+.stat-item.high {
+    background: #ff8c00;
+    color: #ffffff;
+}
+
+.stat-item.medium {
+    background: #ffd700;
+    color: #000000;
+}
+
+.stat-item.low {
+    background: #00ff00;
+    color: #000000;
+}
+
+.terminal-actions {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.terminal-filter {
+    background: #404040;
+    color: #ffffff;
+    border: 1px solid #666666;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 11px;
+    min-width: 100px;
+}
+
+.terminal-btn {
+    background: #404040;
+    color: #ffffff;
+    border: 1px solid #666666;
+    padding: 6px 8px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.2s ease;
+    min-width: 32px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.terminal-btn:hover {
+    background: #555555;
+    transform: translateY(-1px);
+}
+
+.terminal-body {
+    background: #000000;
+    color: #00ff00;
+    padding: 16px;
+    height: calc(100% - 96px);
+    overflow-y: auto;
+    font-size: 13px;
+    line-height: 1.6;
+    font-family: 'Courier New', 'Monaco', 'Menlo', monospace;
+}
+
+.terminal-line {
+    margin-bottom: 3px;
+    white-space: pre-wrap;
+    word-break: break-all;
+    padding: 1px 0;
+}
+
+.terminal-line.system {
+    color: #00bfff;
+    font-weight: normal;
+}
+
+.terminal-line.critical {
+    color: #ff4444;
+    font-weight: bold;
+}
+
+.terminal-line.high {
+    color: #ff8c00;
+}
+
+.terminal-line.medium {
+    color: #ffd700;
+}
+
+.terminal-line.low {
+    color: #00ff00;
+}
+
+.terminal-empty {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    color: #00bfff;
+}
+
+.terminal-cursor {
+    color: #00ff00;
+    animation: blink 1s infinite;
+    display: inline-block;
+    font-weight: bold;
+}
+
+@keyframes blink {
+    0%, 50% {
+        opacity: 1;
+    }
+    51%, 100% {
+        opacity: 0;
+    }
+}
+
+.terminal-body::-webkit-scrollbar {
+    width: 8px;
+}
+
+.terminal-body::-webkit-scrollbar-track {
+    background: #1a1a1a;
+}
+
+.terminal-body::-webkit-scrollbar-thumb {
+    background: #555555;
+    border-radius: 4px;
+}
+
+.terminal-body::-webkit-scrollbar-thumb:hover {
+    background: #666666;
+}
+
+/* Updated Responsive Design */
+@media (max-width: 1024px) {
+    .terminal-container {
+        width: 100%;
+        min-width: 600px;
+        height: 75vh;
+    }
+}
+
+@media (max-width: 768px) {
+    .terminal-wrapper {
+        padding: 10px;
+        min-height: 100vh;
+        height: 100vh;
+    }
+    
+    .terminal-container {
+        min-width: 320px;
+        height: 70vh;
+        max-height: none;
+    }
+    
+    .terminal-controls-bar {
+        flex-direction: column;
+        gap: 8px;
+        align-items: stretch;
+    }
+    
+    .stats-bar {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 6px;
+    }
+    
+    .terminal-actions {
+        justify-content: center;
+    }
+    
+    .terminal-body {
+        font-size: 11px;
+    }
+    
+    .stat-item {
+        min-width: 50px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .terminal-container {
+        min-width: 280px;
+        height: 65vh;
+    }
+    
+    .terminal-title-text {
+        font-size: 12px;
+    }
+}
