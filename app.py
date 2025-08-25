@@ -34,7 +34,14 @@ app = Flask(__name__)
 # Update CORS configuration to be more permissive during development
 CORS(app, resources={
     r"/*": {  # Allow all routes
-        "origins": ["http://localhost:3000", "http://localhost:5000", "http://127.0.0.1:3000", "http://127.0.0.1:5000"],
+        "origins": [
+            "http://localhost:3000",
+            "http://localhost:5000",
+            "http://localhost:5173",
+            "http://127.0.0.1:3000",
+            "http://127.0.0.1:5000",
+            "http://127.0.0.1:5173"
+        ],
         "methods": ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
         "allow_headers": ["Content-Type", "Authorization"],
         "supports_credentials": True
