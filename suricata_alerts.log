@@ -2016,3 +2016,27 @@
 2025-08-25 17:48:03,287 - __main__ - INFO - Starting Flask-SocketIO app with Suricata on interface: Ethernet
 2025-08-25 17:48:03,287 - werkzeug - WARNING -  * Debugger is active!
 2025-08-25 17:48:03,291 - werkzeug - INFO -  * Debugger PIN: 132-831-113
+2025-08-25 18:01:59,526 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata
+2025-08-25 18:01:59,526 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs
+2025-08-25 18:01:59,527 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\rules
+2025-08-25 18:01:59,527 - suricata_integration - INFO - Created directory: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\logs
+2025-08-25 18:01:59,528 - suricata_integration - INFO - Created config file: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs\classification.config
+2025-08-25 18:01:59,529 - suricata_integration - INFO - Created config file: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs\reference.config
+2025-08-25 18:01:59,530 - suricata_integration - INFO - Created config file: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\configs\threshold.config
+2025-08-25 18:01:59,618 - suricata_integration - INFO - Generated Suricata config: c:\Users\panna\Documents\GitHub\Cyberbot\Cyberbot\suricata\suricata.yaml
+2025-08-25 18:01:59,626 - app - INFO - Checking API configurations...
+2025-08-25 18:01:59,627 - app - INFO - All configurations present
+2025-08-25 18:01:59,627 - app - INFO - Gemini API configured successfully
+2025-08-25 18:02:01,099 - app - INFO - Successfully connected to Jira. Available projects: KAN
+2025-08-25 18:02:01,100 - app - INFO - Loading model from alert_classifier.pkl
+2025-08-25 18:02:01,117 - app - INFO - Model type: <class 'sklearn.ensemble._forest.RandomForestClassifier'>
+2025-08-25 18:02:01,118 - app - INFO - Loading vectorizer from tfidf_vectorizer.pkl
+2025-08-25 18:02:01,132 - app - INFO - Vectorizer type: <class 'sklearn.feature_extraction.text.TfidfVectorizer'>
+2025-08-25 18:02:01,132 - app - INFO - Model and vectorizer loaded successfully
+2025-08-25 18:02:01,189 - __main__ - INFO - Starting Flask Security Application with Suricata Integration
+2025-08-25 18:02:05,271 - __main__ - ERROR - Database connection failed: (psycopg2.OperationalError) Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused (0x0000274D/10061)
+	Is the server running on that host and accepting TCP/IP connections?
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
